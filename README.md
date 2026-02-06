@@ -8,6 +8,7 @@ A collection of AI projects exploring RAG, LLMs, OCR, and citation-aware systems
 This project implements an Agentic Retrieval-Augmented Generation (RAG) powered email classification system designed to detect phishing, fraud, brand impersonation, and business email compromise (BEC) attacks in real-world email content.Unlike traditional keyword-only spam filters, this system combines rule-based reasoning, machine learning, semantic similarity (RAG), and brand/domain reputation analysis to accurately classify emails as SAFE, SUSPICIOUS, or MALICIOUS.
 The architecture mirrors how modern enterprise email security platforms (e.g., Microsoft Defender, Proofpoint, Mimecast) operate.
 
+
 🚀 Key Features
 🔍 Multi-Agent Detection Pipeline
     The system uses independent analytical agents, each specializing in a different threat dimension:
@@ -25,6 +26,7 @@ The architecture mirrors how modern enterprise email security platforms (e.g., M
             Uses SentenceTransformers to match email content against known phishing attack narratives
             Detects semantic intent beyond exact keywords
 
+
 🧠 Agentic Risk Scoring
       Each agent produces a risk score that is combined using weighted orchestration logic:
             Rule-based signals (highest weight)
@@ -37,6 +39,7 @@ The architecture mirrors how modern enterprise email security platforms (e.g., M
             MALICIOUS
       Hard overrides ensure that critical impersonation attacks are never misclassified as safe.
 
+
 🛠️ Technologies Used
       Python
       LangChain (Agentic RAG concepts)
@@ -46,6 +49,7 @@ The architecture mirrors how modern enterprise email security platforms (e.g., M
       TF-IDF Vectorization
       Regex-based preprocessing
       FAISS / Vector embeddings (optional extension)
+
 
 🧪 Threat Coverage
     This system detects:
@@ -58,11 +62,13 @@ The architecture mirrors how modern enterprise email security platforms (e.g., M
         ✔ Fake security vendor notifications
         ✔ Urgency & pressure-based social engineering
 
+
 📈 Accuracy & Performance
       Designed to achieve ~80–88% detection accuracy on real-world phishing datasets
       Optimized for high recall on malicious emails
       Suitable for cybersecurity labs, internships, SOC training, and academic projects
   Note: Accuracy depends on dataset quality and threshold tuning.
+
 
 💻 How It Works
       User inputs raw email content
@@ -74,6 +80,7 @@ The architecture mirrors how modern enterprise email security platforms (e.g., M
       Each agent independently analyzes the email
       Risk scores are aggregated
       Final classification and evidence are returned in real time
+
 
 🧑‍💻 Use Cases
     SOC analyst training
