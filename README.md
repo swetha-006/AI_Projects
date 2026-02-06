@@ -4,7 +4,6 @@ A collection of AI projects exploring RAG, LLMs, OCR, and citation-aware systems
 
 🛡️ Agentic RAG-Based Email Threat Detection System
 📌 Overview
-
 This project implements an Agentic Retrieval-Augmented Generation (RAG) powered email threat detection system designed to identify:
 
 Phishing attacks
