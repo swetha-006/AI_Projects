@@ -28,7 +28,7 @@ The architecture mirrors how modern enterprise email security platforms (e.g., M
 
 
 🧠 Agentic Risk Scoring
-      Each agent produces a risk score that is combined using weighted orchestration logic:
+    Each agent produces a risk score that is combined using weighted orchestration logic:
             Rule-based signals (highest weight)
             ML classification
             Semantic similarity (RAG)
